@@ -17,7 +17,7 @@ bot.on("message", msg => {
   let prefix = "$";
 
   // Ignore if there's no prefix
-  if(!msg.content.startsWith(prefix, upperjam)) return;
+  if(!msg.content.startsWith(prefix)) return;
   // ignore if Author is a bot
   if(msg.author.bot) {
       // You can change this message to not appear.
